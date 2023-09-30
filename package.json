@@ -1,7 +1,7 @@
 {
   "name": "Aestetic_Life",
   "version": "1.0.0",
-  "description": "Aestetic_Life",
+  "description": "Fitness-club",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
