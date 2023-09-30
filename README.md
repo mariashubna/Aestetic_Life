@@ -1,3 +1,1 @@
-.
-б...б.
 # Fitness-club
