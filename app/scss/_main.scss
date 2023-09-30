@@ -3,7 +3,7 @@
   background-image: url(../images/bg-mobile-1.jpg);
   background-position: no-repeat;
   background-position: center;
-  background-size: 320px auto;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   //position: absolute;
@@ -110,6 +110,9 @@ font-weight: 500;
 line-height: normal;
 width: 241px;
 margin-top: auto; 
+}
+.header-icons {
+  display: none;
 }
 .mobile-menu.js-menu-container.is-open {
   transform: translateY(0);

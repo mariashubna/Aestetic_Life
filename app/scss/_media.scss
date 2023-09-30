@@ -1,10 +1,8 @@
 @media screen and (min-width: 425px) {
-  .container {    
-    max-width: 425px;    
+  .container {
+    max-width: 425px;
   }
-  .header {
-    background-size: 425px auto;
-  }
+  
   .support-form .contacts-form-wrap {
     width: 160px;
   }
@@ -20,18 +18,15 @@
 }
 
 @media screen and (min-width: 580px) {
-  .container {    
-    max-width: 580px;    
+  .container {
+    max-width: 580px;
   }
-  .header {
-    background-size: 580px auto;
-  }
+  
   form.contacts-form {
     width: 350px;
     margin: auto;
   }
   .footer {
-
     &-inner {
       gap: 110px 160px;
       justify-content: center;
@@ -54,7 +49,6 @@
           height: 174.712px;
         }
       }
-
 
       &-menu__list {
         gap: 24px;
@@ -86,18 +80,74 @@
         font-size: 18px;
       }
     }
-
   }
 }
 
 @media screen and (min-width: 768px) {
-
   .container {
-    width: 768px;
+    max-width: 768px;
     padding: 0 32px;
   }
   .header {
-    background-size: 768px auto;
+    &-inner {
+      padding: 24px 0;
+      margin-bottom: 36px;
+      &__link-logo img {
+        width: 222px;
+      }
+      &__btn svg {
+        width: 64px;
+        height: 64px;
+      }
+    }
+    &-content {
+      height: 48%;
+      &-text {
+        width: 342px;
+        font-size: 80px;
+        line-height: normal;
+      }
+      &-second {
+        font-size: 80px;
+        position: absolute;
+        right: 32px;
+        top: 400px;
+      }
+    }
+    &-scroll {
+      bottom: 48px;
+      gap: 10px;
+      &-btn {
+        width: 64px;
+        height: 64px;
+        &-icon {
+          width: 36px;
+          height: 26px;
+
+        }
+      }
+    }
+  }
+  .header-counter {
+    gap: 10px;
+  
+  }
+  .header-counter-block {
+    height: 120px;
+    width: 12px;
+    border: 2px solid black;
+  }
+  .header-counter-text {
+  font-size: 22px;
+  }
+  .header-counter-block-color {
+    width: 11px;
+  }
+  .header-simple-text {
+  font-size: 80px;
+  width: auto;
+  margin-top: auto; 
+  text-align: right;
   }
   .about-us {
     margin: 64px 0;
@@ -135,11 +185,9 @@
         width: 703px;
         height: 676px;
       }
-
     }
   }
   .advantages {
-
     &-inner {
       padding: 64px 32px;
 
@@ -158,7 +206,6 @@
           height: 286px;
           font-size: 56px;
           gap: 12px;
-
 
           span {
             font-size: 22px;
@@ -234,7 +281,6 @@
   }
   form.contacts-form {
     width: 500px;
-
   }
   .support-form .contacts-form-wrap {
     width: 232px;
@@ -268,12 +314,10 @@
   }
 
   .footer {
-
     &-inner {
       &__logo {
         font-size: 56px;
         gap: 180px;
-
       }
 
       .list-link {
@@ -284,35 +328,98 @@
 }
 
 @media screen and (min-width: 1280px) {
-
   .container {
-    width: 100%;
+    max-width: 1280px;
     padding: 0 40px;
   }
+  .header {
+    background-size: 100% auto;
+      &-inner {
+        margin-bottom: 100px;       
+      }
+      &-content {
+        height: 48%;
+        &-text {
+          width: 342px;
+          font-size: 80px;
+          line-height: normal;
+        }
+        &-second {
+          font-size: 80px;
+          position: absolute;
+          right: 32px;
+          top: 400px;
+        }
+      }
+      &-scroll {
+        bottom: 48px;
+        gap: 12px;
+        &-btn {
+          width: 64px;
+          height: 64px;
+          &-icon {
+            width: 36px;
+            height: 26px;
+  
+          }
+        }
+      }
+    }
   .header-inner__list {
     display: flex;
     gap: 60px;
   }
   .header-language {
     color: $black;
-    font-family: Manrope,sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
   }
   .header-inner__language {
-    gap: 22px;
+    display: flex;
+    gap: 10px;
   }
   .header-inner__btn {
     display: none;
   }
   li.header-inner__list-item {
-    font-family: Tektur,sans-serif;
+    font-family: Tektur, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
   }
-
+  .header-counter {
+    gap: 10px;
+  
+  }
+  .header-counter-block {
+    height: 180px;
+    width: 16px;
+    border: 3px solid black;
+  }
+  .header-counter-text {
+  font-size: 22px;
+  }
+  .header-counter-block-color {
+    width: 15px;
+  }
+  .header-simple-text {
+  font-size: 80px;
+  width: auto;
+  margin-top: auto; 
+  text-align: right;
+  }
+  .header-icons {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+  }
+.footer-inner-link__list-item svg {
+  width: 48px;
+  height: 48px;
+}
   .about-us {
     margin: 64px 0;
 
@@ -349,7 +456,6 @@
         width: 722px;
         height: 881px;
       }
-
     }
   }
 
@@ -371,7 +477,6 @@
     width: 980px;
     display: block;
   }
-
 
   .spec-programs {
     padding: 100px 0;
@@ -478,22 +583,18 @@
 @media screen and (min-width: 1440px) {
   .spec-programs-img-1 {
     width: 466px;
-
   }
   .spec-programs-img-2 {
     width: 466px;
-
   }
 
   .support-form .contacts-form-btn {
     font-size: 36px;
     padding: 24px;
   }
-
 }
 
 @media screen and (min-width: 1920px) {
-
   .container {
     width: 1920px;
     padding: 0 80px;
@@ -560,7 +661,6 @@
 
       &__content-img {
         background-color: $black;
-
       }
 
       &-img {
