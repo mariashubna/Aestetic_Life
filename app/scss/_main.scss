@@ -1,9 +1,10 @@
 .header {
   height: 100vh;
-  background-image: url(../images/bg-mobile-1.png);
+  background-image: url(../images/bg-mobile-1.jpg);
   background-position: no-repeat;
   background-position: center;
-  background-size: auto 100%;
+  background-size: 320px auto;
+  background-repeat: no-repeat;
   position: relative;
   //position: absolute;
   //top: 0;
@@ -37,6 +38,7 @@
   &-content {
     display: flex;
     justify-content: space-between;
+    height: 50%;
     &-text {
       width: 144px;
       color: $black;
@@ -45,7 +47,13 @@
       font-weight: 500;
       line-height: 1;
     }
-    &-img {
+    &-second {
+      color: $black;
+      font-family: Tektur;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1;
+      padding-left: 108px;
     }
   }
   &-scroll {
@@ -92,6 +100,16 @@ line-height: normal;
   border-radius: 20px;
   height: 0; 
 transition: height 0.3s; 
+}
+.header-simple-text {
+  color: $white;
+font-family: Tektur;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 241px;
+margin-top: auto; 
 }
 .mobile-menu.js-menu-container.is-open {
   transform: translateY(0);

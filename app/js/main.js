@@ -59,22 +59,18 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             text: "Lift or go f*rk",
             simpleText: "",
-            bgImage: "url(../images/bg-mobile-1.png)",
+            bgImage: "url(/images/bg-mobile-1.jpg)",
         },
         {
             text: "Philosophy",
             simpleText: "of Aesthetic Life",
-            bgImage: "url(../images/bg-mobile-2.png)",
+            bgImage: "url(../images/bg-mobile-2.jpg)",
         },
         {
             text: "Push",
+            secondText: "or Die",
             simpleText: "",
-            bgImage: "url(../images/bg-mobile-3.png)",
-        },
-        {
-            text: "Philosophy",
-            simpleText: "of Aesthetic Life",
-            bgImage: "url(../images/bg-mobile-2.png)",
+            bgImage: "url(../images/bg-mobile-3.jpg)",
         },
     ];
 
@@ -101,12 +97,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const slide = slides[currentSlide];
         slideContainer.style.backgroundImage = slide.bgImage;
         slideContainer.querySelector(".header-content-text").textContent = slide.text;
+        slideContainer.querySelector(".header-content-second").textContent = slide.secondText;
         slideContainer.querySelector(".header-simple-text").textContent = slide.simpleText;
 
         // Установите начальную высоту .header-counter-block-color на максимальное значение
         if (currentSlide === 0) {
             counterBlockColor.style.height = maxColorHeight + "px";
-            updateCounterTextAndColor(0); // Добавьте это
+            updateCounterTextAndColor(0); 
         } else {
             updateCounterTextAndColor(currentSlide);
         }

@@ -1,12 +1,12 @@
 {
-  "name": "Fitness-club",
+  "name": "Aestetic_Life",
   "version": "1.0.0",
-  "description": "Fitness-club",
+  "description": "Aestetic_Life",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Anstasia",
+  "author": "Anstasia, Mariia S.",
   "license": "ISC",
   "devDependencies": {
     "animate.css": "^4.1.1",

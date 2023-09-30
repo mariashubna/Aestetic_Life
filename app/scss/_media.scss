@@ -1,4 +1,10 @@
 @media screen and (min-width: 425px) {
+  .container {    
+    max-width: 425px;    
+  }
+  .header {
+    background-size: 425px auto;
+  }
   .support-form .contacts-form-wrap {
     width: 160px;
   }
@@ -14,6 +20,12 @@
 }
 
 @media screen and (min-width: 580px) {
+  .container {    
+    max-width: 580px;    
+  }
+  .header {
+    background-size: 580px auto;
+  }
   form.contacts-form {
     width: 350px;
     margin: auto;
@@ -83,6 +95,9 @@
   .container {
     width: 768px;
     padding: 0 32px;
+  }
+  .header {
+    background-size: 768px auto;
   }
   .about-us {
     margin: 64px 0;
