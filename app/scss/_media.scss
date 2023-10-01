@@ -2,7 +2,7 @@
   .container {
     max-width: 425px;
   }
-  
+
   .support-form .contacts-form-wrap {
     width: 160px;
   }
@@ -21,7 +21,7 @@
   .container {
     max-width: 580px;
   }
-  
+
   form.contacts-form {
     width: 350px;
     margin: auto;
@@ -95,10 +95,6 @@
       &__link-logo img {
         width: 222px;
       }
-      &__btn svg {
-        width: 64px;
-        height: 64px;
-      }
     }
     &-content {
       height: 48%;
@@ -123,14 +119,33 @@
         &-icon {
           width: 36px;
           height: 26px;
-
         }
       }
     }
   }
+  .header-inner__btn {
+    gap: 12px;
+    width: 64px;
+    height: 64px;
+  }
+  .header-inner__btn-line {
+    width: 44px;
+    height: 4px;
+  }
+  .header-inner__btn:hover .header-inner__btn-line:nth-child(2) {
+    width: 37px;
+  }
+  .header-inner__btn:hover .header-inner__btn-line:last-child {
+    width: 30px;
+  }
+  .header-inner__btn:focus .header-inner__btn-line:nth-child(2) {
+    width: 37px;
+  }
+  .header-inner__btn:focus .header-inner__btn-line:last-child {
+    width: 30px;
+  }
   .header-counter {
     gap: 10px;
-  
   }
   .header-counter-block {
     height: 120px;
@@ -138,16 +153,16 @@
     border: 2px solid black;
   }
   .header-counter-text {
-  font-size: 22px;
+    font-size: 22px;
   }
   .header-counter-block-color {
     width: 11px;
   }
   .header-simple-text {
-  font-size: 80px;
-  width: auto;
-  margin-top: auto; 
-  text-align: right;
+    font-size: 80px;
+    width: auto;
+    margin-top: auto;
+    text-align: right;
   }
   .about-us {
     margin: 64px 0;
@@ -334,37 +349,35 @@
   }
   .header {
     background-size: 100% auto;
-      &-inner {
-        margin-bottom: 100px;       
+    &-inner {
+      margin-bottom: 48px;
+    }
+    &-content {
+      height: 40%;
+      &-text {
+        width: 410px;
+        font-size: 100px;
       }
-      &-content {
-        height: 48%;
-        &-text {
-          width: 342px;
-          font-size: 80px;
-          line-height: normal;
-        }
-        &-second {
-          font-size: 80px;
-          position: absolute;
-          right: 32px;
-          top: 400px;
-        }
+      &-second {
+        font-size: 100px;
+        right: 42px;
+        top: 670px;
+        color: $white;
       }
-      &-scroll {
-        bottom: 48px;
-        gap: 12px;
-        &-btn {
-          width: 64px;
-          height: 64px;
-          &-icon {
-            width: 36px;
-            height: 26px;
-  
-          }
+    }
+    &-scroll {
+      bottom: 48px;
+      gap: 12px;
+      &-btn {
+        width: 64px;
+        height: 64px;
+        &-icon {
+          width: 36px;
+          height: 26px;
         }
       }
     }
+  }
   .header-inner__list {
     display: flex;
     gap: 60px;
@@ -375,10 +388,27 @@
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
+    padding: 10px;
+    border-radius: 6px;
   }
   .header-inner__language {
     display: flex;
-    gap: 10px;
+    gap: 2px;
+  }
+  .header-language {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-language:hover {
+    background-color: $pink;
+    color: $white;
+  }
+  .header-language:focus {
+    background-color: $black;
+    color: $white;
+  }
+  .header-inner__list-item a:hover {
+    border-bottom: 3px solid $pink;
   }
   .header-inner__btn {
     display: none;
@@ -391,7 +421,6 @@
   }
   .header-counter {
     gap: 10px;
-  
   }
   .header-counter-block {
     height: 180px;
@@ -399,16 +428,24 @@
     border: 3px solid black;
   }
   .header-counter-text {
-  font-size: 22px;
+    font-size: 28px;
   }
   .header-counter-block-color {
     width: 15px;
   }
   .header-simple-text {
-  font-size: 80px;
-  width: auto;
-  margin-top: auto; 
-  text-align: right;
+    font-size: 100px;
+    width: auto;
+    margin-top: auto;
+    text-align: right;
+  }
+  .header-simple-second {
+    color: $white;
+    text-align: right;
+    font-family: Tektur;
+    font-size: 100px;
+    font-weight: 500;
+    line-height: normal;
   }
   .header-icons {
     display: flex;
@@ -416,10 +453,13 @@
     bottom: 40px;
     right: 40px;
   }
-.footer-inner-link__list-item svg {
-  width: 48px;
-  height: 48px;
-}
+  .footer-inner-link__list-item svg {
+    width: 48px;
+    height: 48px;
+  }
+  .header-icon {
+    fill: $white;
+  }
   .about-us {
     margin: 64px 0;
 
@@ -592,12 +632,98 @@
     font-size: 36px;
     padding: 24px;
   }
+  .container {
+    max-width: 1440px;
+    padding: 0 80px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
   .container {
-    width: 1920px;
+    max-width: 1920px;
     padding: 0 80px;
+  }
+  .header {
+    &-inner {
+      margin-bottom: 66px;
+    }
+    &-content {
+      height: 44%;
+      &-text {
+        width: 480px;
+        font-size: 120px;
+      }
+      &-second {
+        font-size: 120px;
+        right: 42px;
+        top: 670px;
+        color: $black;
+      }
+    }
+    &-scroll {
+      bottom: 48px;
+      gap: 24px;
+      &-btn {
+        width: 64px;
+        height: 64px;
+        &-icon {
+          width: 36px;
+          height: 26px;
+        }
+      }
+    }
+  }
+  .header-inner__list {
+    display: flex;
+    gap: 60px;
+  }
+  ul.header-menu-inner-link__list.list {
+    gap: 20px;
+  }
+  .header-language {
+    color: $black;
+    font-family: Manrope, sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .header-inner__language {
+    display: flex;
+    gap: 22px;
+  }
+  .header-inner__btn {
+    display: none;
+  }
+  li.header-inner__list-item {
+    font-family: Tektur, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .header-counter {
+    gap: 10px;
+  }
+  .header-counter-block {
+    height: 220px;
+    width: 16px;
+    border: 3px solid black;
+  }
+
+  .header-counter-text {
+    font-size: 28px;
+  }
+  .header-counter-block-color {
+    width: 15px;
+  }
+  .header-simple-text {
+    font-size: 88px;
+    color: $black;
+    .header-icons {
+      display: flex;
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+    }
   }
   .about-us {
     &-inner__content {

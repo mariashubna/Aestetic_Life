@@ -191,6 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
             simpleText: "",
             bgImage: "url(../images/bg-tablet-4.jpg)",
         },
+        
     ];
 
     const slides1280 = [
@@ -200,27 +201,33 @@ document.addEventListener("DOMContentLoaded", function () {
             bgImage: "url(../images/bg-desktop-1.jpg)",
         },
         {
-            text: "Philosophy",
-            simpleText: "of Aesthetic Life",
+            text: "Join the Lifestyle",
+            simpleText: "of",
+            simpleTextSecond: "Aesthetic Life",
             bgImage: "url(../images/bg-desktop-2.jpg)",
             color: "white",
+            fill: "black",
+            width: "860px",
+        },
+        {
+            text: "Philosophy",
+            simpleText: "of",
+            simpleTextSecond: "Aesthetic Life",
+            bgImage: "url(../images/bg-desktop-3.jpg)",
+            color: "white",
+            fill: "black",
         },
         {
             text: "Push",
             secondText: "or Die",
             simpleText: "",
-            bgImage: "url(../images/bg-desktop-3.jpg)",
+            bgImage: "url(../images/bg-desktop-4.jpg)",
         },
         
-        {
-            text: "Join the Lifestyle",
-            simpleText: "of Aesthetic Life",
-            bgImage: "url(../images/bg-desktop-4.jpg)",
-            color: "white",
-        },
+        
     ];
 
-    const slides1440 = [
+    const slides1920 = [
         {
             text: "Lift or go f*rk",
             simpleText: "",
@@ -229,18 +236,22 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             text: "Join the Lifestyle",
             simpleText: "of Aesthetic Life",
-            bgImage: "url(../images/bg-full-hd-4.jpg)",
+            bgImage: "url(../images/bg-full-hd-2.jpg)",
+            fontSize: "88px",
+            fill: "black",
         },
         {
             text: "Philosophy",
             simpleText: "of Aesthetic Life",
-            bgImage: "url(../images/bg-full-hd-2.jpg)",
+            bgImage: "url(../images/bg-full-hd-3.jpg)",
+            fontSize: "88px",
+            fill: "black",
         },
         {
             text: "Push",
             secondText: "or Die",
             simpleText: "",
-            bgImage: "url(../images/bg-full-hd-3.jpg)",
+            bgImage: "url(../images/bg-full-hd-4.jpg)",
         },
     ];
 
@@ -248,7 +259,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const maxColorHeightMobile = 70; // Высота для мобильных устройств
     const maxColorHeightTablet = 116; // Высота для планшетных устройств
     const maxColorHeightDesktop = 176; // Высота для десктопных устройств
-    const maxColorHeightLargeDesktop = 116; // Высота для больших десктопных устройств (>= 1440px)
+    const maxColorHeightFull = 215;
+   
 
     let currentSlide = 0;
 
@@ -256,9 +268,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let slides;
         let maxColorHeight;
     
-        if (window.innerWidth >= 1440) {
-            slides = slides1440;
-            maxColorHeight = maxColorHeightLargeDesktop;
+        if (window.innerWidth >= 1920)  {
+            slides = slides1920;
+            maxColorHeight = maxColorHeightFull;
         } else if (window.innerWidth >= 1280) {
             slides = slides1280;
             maxColorHeight = maxColorHeightDesktop;
@@ -276,8 +288,15 @@ document.addEventListener("DOMContentLoaded", function () {
         slideContainer.style.backgroundImage = slide.bgImage;
         slideContainer.querySelector(".header-content-text").textContent = slide.text;
         slideContainer.querySelector(".header-content-text").style.color = slide.color || "black"; // Устанавливаем цвет текста
+        slideContainer.querySelector(".header-content-text").style.fontSize = slide.fontSize || "";  
         slideContainer.querySelector(".header-content-second").textContent = slide.secondText || "";
         slideContainer.querySelector(".header-simple-text").textContent = slide.simpleText;
+        slideContainer.querySelector(".header-simple-second").textContent = slide.simpleTextSecond || "";       
+        slideContainer.querySelector(".header-content-text").style.width = slide.width || "";
+        const headerIcons = slideContainer.querySelectorAll(".header-icon");
+headerIcons.forEach(icon => {
+    icon.style.fill = slide.fill || "white";
+});
     
         updateCounterTextAndColor(currentSlide, slides.length, maxColorHeight);
     }

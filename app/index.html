@@ -29,31 +29,21 @@
             <img src="images/logo_mobile.svg" alt="" class="" />
           </a>
           <ul class="header-inner__list">
-            <li class="header-inner__list-item"><a href="">About us</a></li>
+            <li class="header-inner__list-item"><a href="#about">About us</a></li>
             <li class="header-inner__list-item"><a href="">Services</a></li>
             <li class="header-inner__list-item"><a href="">Price</a></li>
-            <li class="header-inner__list-item"><a href="">Services</a></li>
+            <li class="header-inner__list-item"><a href="">Reviews</a></li>
           </ul>
           <div class="header-inner__language header-inner__language-main">
             <a href="" class="header-inner__language-en header-language">EN</a>
             <a href="" class="header-inner__language-ua header-language">UA</a>
           </div>
           <button class="header-inner__btn js-open-menu" data-modal-open>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="36"
-              height="36"
-              viewBox="0 0 36 36"
-              fill="none"
-            >
-              <path
-                d="M6 9H30M6 18H30M6 27H30"
-                stroke="#070606"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="header-inner__btn js-open-menu" data-modal-open>
+              <div class="header-inner__btn-line"></div>      
+              <div class="header-inner__btn-line"></div>      
+              <div class="header-inner__btn-line"></div>      
+            </div>
           </button>
         </div>
         <div class="header-content">
@@ -68,7 +58,10 @@
                 <p class="header-counter-text">01</p>
             </div> 
         </div>
-        <p class="header-simple-text"></p>
+        <div class="header-simple">
+          <p class="header-simple-text"></p>
+          <p class="header-simple-second"></p>
+        </div>
         <div>
           <div class="header-scroll">
             <button class="header-scroll-btn">
@@ -87,28 +80,28 @@
               <li class="footer-inner-link__list-item">
                 <a class="header-inner-link-menu" href="">
                   <svg class="header-icon" width="32" height="32">
-                    <use class="" href="images/icons.svg#icon-instagram"></use>
+                    <use class="" href="images/icons.svg#icon-instagram-header"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-inner-link__list-item">
                 <a class="header-inner-link-menu" href="">
                   <svg class="header-icon" width="32" height="32">
-                    <use class="" href="images/icons.svg#icon-telegram"></use>
+                    <use class="" href="images/icons.svg#icon-telegram-header"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-inner-link__list-item">
                 <a class="header-inner-link-menu" href="">
                   <svg class="header-icon" width="32" height="32">
-                    <use class="" href="images/icons.svg#icon-youtube"></use>
+                    <use class="" href="images/icons.svg#icon-youtube-header"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-inner-link__list-item">
                 <a class="header-inner-link-menu" href="">
                   <svg class="header-icon" width="32" height="32">
-                    <use class="" href="images/icons.svg#icon-twitter"></use>
+                    <use class="" href="images/icons.svg#icon-twitter-header"></use>
                   </svg>
                 </a>
               </li>
@@ -156,7 +149,7 @@
             <a class="mobile-menu__item-link link" href="">Price</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="mobile-menu__item-link link" href="">Services</a>
+            <a class="mobile-menu__item-link link" href="">Reviews</a>
           </li>
         </ul>
         <ul class="header-menu-inner-link__list list">
@@ -196,7 +189,7 @@
       </div>
     </div>
     <main>
-      <section class="about-us">
+      <section class="about-us" id="about">
         <div class="container">
           <div class="about-us-inner">
             <div class="about-us-inner__content">
