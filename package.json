@@ -4,8 +4,7 @@
   "description": "Fitness-club",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
-  "build": "gulp build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anstasia, Mariia S.",
   "license": "ISC",
